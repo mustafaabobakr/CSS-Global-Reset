@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Global Reset</title>
-  <link rel="stylesheet" href="./reset.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Global Reset</title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./reset.css">
 </head>
+
 <body>
-<main style="width: 80%; margin: 90px auto;">
+	<main style="width: 80%; margin: 90px auto;">
+		<label for="modeCheckbox">Dark Mode</label>
+		<input type="checkbox" name="modeCheckbox" id="modeCheckbox">
 		<div style="margin-top: 30px;">
 			<h1>Header 1</h1>
 			<h2>Header 2</h2>
@@ -119,5 +124,22 @@
 			</select>
 		</div>
 	</main>
+	<script>
+	  // const userPrefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    // const preferredTheme = userPrefersDarkMode ? 'dark' : 'light';
+		// document.documentElement.style.setProperty('--mode-bg', 'var(--dark-bg)');
+		// document.documentElement.style.setProperty('--mode-color', 'var(--dark-color)');
+
+		// document.getElementById('modeCheckbox').addEventListener('click', () => {
+		// 	if (this.checked) {
+		// document.documentElement.style.setProperty('--mode-bg', '--dark-bg');
+		// document.documentElement.style.setProperty('--mode-color', '--dark-color');
+		// 	} else {
+		// document.documentElement.style.setProperty('--mode-bg', 'var(--light-bg)');
+		// document.documentElement.style.setProperty('--mode-color', 'var(--light-color)');
+		// 	}
+		// })
+	</script>
 </body>
+
 </html>
