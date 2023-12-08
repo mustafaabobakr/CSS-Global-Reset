@@ -169,6 +169,14 @@ img {
 	-o-user-drag: none;
 	-ms-user-drag: none;
 	user-drag: none;
+	max-width: 100%;
+	/* https://x.com/csswizardry/status/1717841334462005661 */
+	height: auto;
+	vertical-align: middle;
+	font-style: italic;
+	background-repeat: no-repeat;
+	background-size: cover;
+	shape-margin: 0.75rem;
 }
 
 audio,
