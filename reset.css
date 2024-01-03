@@ -98,7 +98,7 @@ body {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	min-height: 100vh;
-	color-adjust: exact !important;
+	print-color-adjust: exact !important;
 	-webkit-print-color-adjust: exact !important;
 	-webkit-text-size-adjust: 100%;
 	-webkit-font-smoothing: antialiased;
