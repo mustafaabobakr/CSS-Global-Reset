@@ -3,7 +3,7 @@
 CSS Global Reset reset.css link to copy :-
 
 ```html
-<link rel="stylesheet" href="https://mostafaabobakr7.github.io/CSS-Global-Reset/reset.css" />
+<link rel="stylesheet" href="https://raw.githubusercontent.com/mustafaabobakr/CSS-Global-Reset/master/reset.css" />
 ```
 
 # [Preview 💻 ↗](https://mostafaabobakr7.github.io/CSS-Global-Reset/)
