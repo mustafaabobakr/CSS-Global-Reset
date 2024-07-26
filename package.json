@@ -1,0 +1,29 @@
+{
+	"name": "css-global-reset",
+	"version": "1.0.0",
+	"description": "A simple CSS global reset",
+	"keywords": [
+		"css",
+		"reset",
+		"global",
+		"normalize",
+		"reset.css",
+		"css reset",
+		"css global reset",
+		"css normalize",
+		"css reset.css"
+	],
+	"license": "ISC",
+	"author": {
+		"name": "Mostafa Abobakr",
+		"email": "contact@mostafaabobakr.com",
+		"url": "https://mostafaabobakr.com"
+	},
+	"main": "index.js",
+	"scripts": {
+		"dev": "vite"
+	},
+	"devDependencies": {
+		"vite": "^5.3.5"
+	}
+}

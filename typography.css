@@ -1,0 +1,62 @@
+:root {
+	--main-font: "Nunito";
+	--html-font-size: 10px;
+	--body-font-size: 1.8rem;
+}
+
+html {
+	font-size: var(--html-font-size);
+}
+
+body {
+	print-color-adjust: exact !important;
+	-webkit-print-color-adjust: exact !important;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeSpeed;
+	font-size: var(--body-font-size);
+	line-height: 1.7;
+	font-weight: 400;
+}
+
+html,
+body {
+	font-family: var(--main-font);
+}
+h1 {
+	font-size: 15rem;
+	font-size: clamp(9rem, 15vw, 15rem);
+	font-weight: 200;
+}
+
+h2 {
+	font-size: 7rem;
+	font-size: clamp(7rem, 10vw, 13rem);
+	font-weight: 200;
+}
+
+h3 {
+	font-size: 5rem;
+}
+
+h4 {
+	font-size: 4rem;
+}
+
+h5 {
+	font-size: 3rem;
+}
+
+h6 {
+	font-size: 2rem;
+}
+
+p {
+	font-size: 1.8rem;
+}
+
+option {
+	font-size: 1.6rem;
+	padding: 0.5rem;
+}

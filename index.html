@@ -1,145 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Global Reset</title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" />
+		<link rel="stylesheet" href="./reset.css" />
+		<link rel="stylesheet" href="./typography.css" />
+		<link rel="stylesheet" href="./inputs.css" />
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CSS Global Reset</title>
-	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="./reset.css">
-</head>
+	<body>
+		<main style="width: 80%; margin: 90px auto">
+			<div style="margin-top: 30px">
+				<h1>Header 1</h1>
+				<h2>Header 2</h2>
+				<h3>Header 3</h3>
+				<h4>Header 4</h4>
+				<h5>Header 5</h5>
+				<h6>Header 6</h6>
+				<p>
+					Paragraph test is the one you will read so take care to make it look good, so lets repeat text to see how it
+					looks in many lines as user reads. You may change text color and adjust size as you want.
+				</p>
+				<blockquote>
+					This is Blockquote Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+					egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+					amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo
+				</blockquote>
+				<mark>This is Mark tag</mark>
+				<a href="#" target="_blank">Link</a>
+			</div>
+			<div style="margin-top: 30px">
+				<h3>General Inputs</h3>
+				<form>
+					<input type="text" name="username" placeholder="Username" />
+					<input type="password" name="password" placeholder="password" />
+					<input type="email" name="email" placeholder="email" />
+					<input type="search" name="search" placeholder="search..." />
+					<input type="url" name="url" placeholder="url" />
+					<h3>General Inputs with Icons</h3>
+					<span class=""></span>
+					<input type="text" name="usernameicon" placeholder="Username" />
+					<input type="password" name="usernameicon" placeholder="Password" />
+					<input type="email" name="emailicon" placeholder="email" />
+					<input type="search" name="searchicon" placeholder="search..." />
+					<input type="url" name="urlicon" placeholder="url" />
+					<h3>Color</h3>
+					<input title="color" type="color" name="color" />
+					<h3>Time Date</h3>
+					<input title="time" type="time" name="time" />
+					<input title="date" type="date" name="date" />
+					<input title="datetime" type="datetime" name="datetime" placeholder="datetime" />
+					<input title="datetime-local" type="datetime-local" name="datetime-local" />
+					<input title="month" type="month" name="month" />
+					<input title="week" type="week" name="week" />
+					<h3>Range</h3>
+					<input title="range" type="range" name="range" />
+					<h3>Numbers</h3>
+					<input title="tel" type="tel" name="tel" placeholder="tel" />
+					<input title="number" type="number" name="number" placeholder="number" />
+					<h3>File</h3>
+					<input title="file" type="file" name="file" />
+				</form>
+			</div>
+			<div style="margin-top: 30px">
+				<h3>Buttons</h3>
+				<input type="button" value="Submit" title="input submit" />
+				<input disabled type="button" value="Submit" title="input submit disabled" />
+				<button title="default button with icon">
+					<i class="fa fa-times"></i>
+				</button>
+				<button disabled title="disabled attribute">
+					<i class="fa fa-times"></i>
+				</button>
+				<button class="disabled" title="class disabled">
+					<i class="fa fa-times"></i>
+				</button>
+			</div>
+			<div style="margin-top: 30px">
+				<h3>Radio</h3>
+				<label>
+					<input type="radio" name="radio" />
+					<span>Choice 1</span>
+				</label>
+				<label>
+					<input type="radio" name="radio" />
+					<span>Choice 2</span>
+				</label>
+				<label>
+					<input type="radio" name="radio" />
+					<span>Choice 3</span>
+				</label>
+			</div>
+			<div style="margin-top: 30px">
+				<h3>Checkboxs</h3>
+				<label>
+					<input type="checkbox" name="checkBOX" />
+					<span>Choice 1</span>
+				</label>
+				<label>
+					<input type="checkbox" name="checkBOX" />
+					<span>Choice 2</span>
+				</label>
+				<label>
+					<input type="checkbox" name="checkBOX" />
+					<span>Choice 3</span>
+				</label>
+			</div>
+			<div style="margin-top: 30px">
+				<h3>Select</h3>
+				<select name="select">
+					<option value="1">item long name number 1</option>
+					<option value="2">item long name number 2</option>
+					<option value="3">item long name number 3</option>
+					<option value="4">item long name number 4</option>
+					<option value="5">item long name number 5</option>
+				</select>
+				<select name="multi" multiple>
+					<option value="1">item long name number 1</option>
+					<option value="2">item long name number 2</option>
+					<option value="3">item long name number 3</option>
+					<option value="4">item long name number 4</option>
+					<option value="5">item long name number 5</option>
+				</select>
+			</div>
+		</main>
+		<script>
+			// const userPrefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+			// const preferredTheme = userPrefersDarkMode ? 'dark' : 'light';
+			// document.documentElement.style.setProperty('--mode-bg', 'var(--dark-bg)');
+			// document.documentElement.style.setProperty('--mode-color', 'var(--dark-color)');
 
-<body>
-	<main style="width: 80%; margin: 90px auto;">
-		<label for="modeCheckbox">Dark Mode</label>
-		<input type="checkbox" name="modeCheckbox" id="modeCheckbox">
-		<div style="margin-top: 30px;">
-			<h1>Header 1</h1>
-			<h2>Header 2</h2>
-			<h3>Header 3</h3>
-			<h4>Header 4</h4>
-			<h5>Header 5</h5>
-			<h6>Header 6</h6>
-			<p>Paragraph test is the one you will read so take care to make it look good, so lets repeat text to see how it
-				looks in many lines as user reads. You may change text color and adjust size as you want.</p>
-			<blockquote>This is Blockquote Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-				turpis egestas. Vestibulum tortor quam,
-				feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-				ultricies mi
-				vitae est. Mauris placerat eleifend leo</blockquote>
-			<mark>This is Mark tag</mark>
-			<a href="#" target="_blank">Link</a>
-		</div>
-		<div style="margin-top: 30px;">
-			<h3>General Inputs</h3>
-			<input type="text" name="username" placeholder="Username" />
-			<input type="password" name="username" placeholder="password" />
-			<input type="email" name="email" placeholder="email">
-			<input type="search" name="search" placeholder="search...">
-			<input type="url" name="url" placeholder="url">
-			<h3>General Inputs with Icons</h3>
-			<span class=""></span>
-			<input type="text" name="usernameicon" placeholder="Username" />
-			<input type="password" name="usernameicon" placeholder="Password" />
-			<input type="email" name="emailicon" placeholder="email">
-			<input type="search" name="searchicon" placeholder="search...">
-			<input type="url" name="urlicon" placeholder="url">
-			<h3>Color</h3>
-			<input title="color" type="color" name="color">
-			<h3>Time Date</h3>
-			<input title="time" type="time" name="time">
-			<input title="date" type="date" name="date">
-			<input title="datetime" type="datetime" name="datetime" placeholder="datetime">
-			<input title="datetime-local" type="datetime-local" name="datetime-local">
-			<input title="month" type="month" name="month">
-			<input title="week" type="week" name="week">
-			<h3>Range</h3>
-			<input title="range" type="range" name="range">
-			<h3>Numbers</h3>
-			<input title="tel" type="tel" name="tel" placeholder="tel">
-			<input title="number" type="number" name="number" placeholder="number">
-			<h3>File</h3>
-			<input title="file" type="file" name="file">
-		</div>
-		<div style="margin-top: 30px;">
-			<h3>Buttons</h3>
-			<input type="button" value="Submit" title="input submit" />
-			<input disabled type="button" value="Submit" title="input submit disabled" />
-			<button title="default button with icon">
-				<i class="fa fa-times"></i>
-			</button>
-			<button disabled title="disabled attribute">
-				<i class="fa fa-times"></i>
-			</button>
-			<button class="disabled" title="class disabled">
-				<i class="fa fa-times"></i>
-			</button>
-		</div>
-		<div style="margin-top: 30px;">
-			<h3>Radio</h3>
-			<label>
-				<input type="radio" name="radio" />
-				<span>Choice 1</span>
-			</label>
-			<label>
-				<input type="radio" name="radio" />
-				<span>Choice 2</span>
-			</label>
-			<label>
-				<input type="radio" name="radio" />
-				<span>Choice 3</span>
-			</label>
-		</div>
-		<div style="margin-top: 30px;">
-			<h3>Checkboxs</h3>
-			<label>
-				<input type="checkbox" name="checkBOX" />
-				<span>Choice 1</span>
-			</label>
-			<label>
-				<input type="checkbox" name="checkBOX" />
-				<span>Choice 2</span>
-			</label>
-			<label>
-				<input type="checkbox" name="checkBOX" />
-				<span>Choice 3</span>
-			</label>
-		</div>
-		<div style="margin-top: 30px;">
-			<h3>Select</h3>
-			<select name="select">
-				<option value="1">item long name number 1</option>
-				<option value="2">item long name number 2</option>
-				<option value="3">item long name number 3</option>
-				<option value="4">item long name number 4</option>
-				<option value="5">item long name number 5</option>
-			</select>
-			<select name="multi" multiple>
-				<option value="1">item long name number 1</option>
-				<option value="2">item long name number 2</option>
-				<option value="3">item long name number 3</option>
-				<option value="4">item long name number 4</option>
-				<option value="5">item long name number 5</option>
-			</select>
-		</div>
-	</main>
-	<script>
-	  // const userPrefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    // const preferredTheme = userPrefersDarkMode ? 'dark' : 'light';
-		// document.documentElement.style.setProperty('--mode-bg', 'var(--dark-bg)');
-		// document.documentElement.style.setProperty('--mode-color', 'var(--dark-color)');
-
-		// document.getElementById('modeCheckbox').addEventListener('click', () => {
-		// 	if (this.checked) {
-		// document.documentElement.style.setProperty('--mode-bg', '--dark-bg');
-		// document.documentElement.style.setProperty('--mode-color', '--dark-color');
-		// 	} else {
-		// document.documentElement.style.setProperty('--mode-bg', 'var(--light-bg)');
-		// document.documentElement.style.setProperty('--mode-color', 'var(--light-color)');
-		// 	}
-		// })
-	</script>
-</body>
-
+			// document.getElementById('modeCheckbox').addEventListener('click', () => {
+			// 	if (this.checked) {
+			// document.documentElement.style.setProperty('--mode-bg', '--dark-bg');
+			// document.documentElement.style.setProperty('--mode-color', '--dark-color');
+			// 	} else {
+			// document.documentElement.style.setProperty('--mode-bg', 'var(--light-bg)');
+			// document.documentElement.style.setProperty('--mode-color', 'var(--light-color)');
+			// 	}
+			// })
+		</script>
+	</body>
 </html>
